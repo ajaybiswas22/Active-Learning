@@ -1,0 +1,13 @@
+\begin{itemize}
+\item[(a)] Efforts should be made to use SI units where appropriate \textit{e.g.} m, kg, s, K, A, V, Hz, N~(Newton), J~(Joule), W~(Watt), Pa~(Pascal), Tesla \textit{etc}. It is, however, sometimes more appropriate to use common metric units such as km, mm, $\mu$m, nm, bar (pressure), mbar, MPa (Mega Pascal), \textdegree C \textit{etc}. Non-SI metric units should be preferred when SI units lead to very high (\textit{e.g.} > 1000) or very low (\textit{e.g.} < 0.01) figures. Common units should be used when dealing with direct experimental data.
+
+\item[(b)] Non-metric units \textit{e.g.} lb, ft, inch, \textdegree F, esu, emu, psi should be religiously avoided. Often an instrument or a data source gives data in British units. Those information should be converted to corresponding SI (or non SI metric) units immediately on citation from the original text.
+%
+\item[(c)] CGS units are sometimes appropriate depending on the field of work. But a conscious effort is to be made to translate them to corresponding SI units for example the unit g-mole or simply mole is common in chemistry; but chemical engineers should use kmol ( for kilo-mole) and set Avogadro number to $6.023\times 10^{26}$ molecules per kmol instead of the figure $6.022\times 10^{23}$ molecules/gmole. Units ESU and EMU may be avoided in all fields.
+
+\item[(d)] Certain scientific quantities have traditionally been associated with corresponding units, \textit{e.g.} cm$^{-1}$ for wave number, $\mu$m, nm, \AA~for wave length; do not convert them to SI. Between \AA~and nm, we should prefer nm except for wavelengths below 1 nm or 10~\AA. Air conditioning temperatures should be expressed in \textdegree C and cryogenic temperature in Kelvin. Vacuum pressures should be recorded in millibar (mb) in preference to Torr.
+
+\item[(e)] Please note that all units start with lower case letters except those named after scientists. For example Watt (W), Joule (J), Kelvin (K), Ampere (A), Volt (V) start with upper case letters (W, J, K, A, V) while gramme (g), metre (m), second (s) start with lower case letters g, m, s.
+
+\item[(f)] kilo, mega, milli are represented by k, M, m respectively.
+\end{itemize}

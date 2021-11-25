@@ -1,0 +1,186 @@
+%%%%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%
+
+@article{shankar2021indian,
+  title={Indian Agriculture Farm Acts: 2020},
+  author={Shankar, Amar},
+  journal={International Journal of Modern Agriculture},
+  volume={10},
+  number={2},
+  pages={2907--2914},
+  year={2021}
+}
+
+@inproceedings{palakodety2020voice,
+  title={Voice for the voiceless: Active sampling to detect comments supporting the rohingyas},
+  author={Palakodety, Shriphani and KhudaBukhsh, Ashiqur R and Carbonell, Jaime G},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={34},
+  number={01},
+  pages={454--462},
+  year={2020}
+}
+
+@article{ru2020active,
+  title={Active sentence learning by adversarial uncertainty sampling in discrete space},
+  author={Ru, Dongyu and Feng, Jiangtao and Qiu, Lin and Zhou, Hao and Wang, Mingxuan and Zhang, Weinan and Yu, Yong and Li, Lei},
+  journal={arXiv preprint arXiv:2004.08046},
+  year={2020}
+}
+
+@inproceedings{schumann2019active,
+  title={Active learning via membership query synthesis for semi-supervised sentence classification},
+  author={Schumann, Raphael and Rehbein, Ines},
+  booktitle={Proceedings of the 23rd conference on computational natural language learning (CoNLL)},
+  pages={472--481},
+  year={2019}
+}
+
+@article{angluin1988queries,
+  title={Queries and concept learning},
+  author={Angluin, Dana},
+  journal={Machine learning},
+  volume={2},
+  number={4},
+  pages={319--342},
+  year={1988},
+  publisher={Springer}
+}
+
+@inproceedings{ren2020adversarial,
+  title={Adversarial active learning based heterogeneous graph neural network for fake news detection},
+  author={Ren, Yuxiang and Wang, Bo and Zhang, Jiawei and Chang, Yi},
+  booktitle={2020 IEEE International Conference on Data Mining (ICDM)},
+  pages={452--461},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{xiang2012detecting,
+  title={Detecting offensive tweets via topical feature discovery over a large scale twitter corpus},
+  author={Xiang, Guang and Fan, Bin and Wang, Ling and Hong, Jason and Rose, Carolyn},
+  booktitle={Proceedings of the 21st ACM international conference on Information and knowledge management},
+  pages={1980--1984},
+  year={2012}
+}
+
+@inproceedings{palakodety2020voice,
+  title={Voice for the voiceless: Active sampling to detect comments supporting the rohingyas},
+  author={Palakodety, Shriphani and KhudaBukhsh, Ashiqur R and Carbonell, Jaime G},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={34},
+  number={01},
+  pages={454--462},
+  year={2020}
+}
+
+
+%%%%%%%%%%% Sample %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@ARTICLE{Lowe, 
+author={Lowe, D.}, 
+journal={International Journal of Computer Vision}, 
+title={Distinctive image features from scale-invariant keypoints}, 
+month={February}, 
+year={2004}, 
+volume={60}, 
+number={2}, 
+pages={91~-~110}
+}
+
+@ARTICLE{Shannon, 
+author={Shannon, Claude E}, 
+journal={Bell System Technical Journal}, 
+title={A Mathematical Theory of Communication}, 
+year={1948}, 
+month={July}, 
+volume={27}, 
+number={3}, 
+pages={379~-~423}
+}
+
+@phdthesis{Sutherland,
+author = {Ivan Edward Sutherland},
+title = {Sketchpad, a man-machine graphical communication system},
+school = {Massachusetts Institute of Technology},
+year = {1963},
+month = {January},
+url = {http://hdl.handle.net/1721.1/14979}
+}
+
+@phdthesis{Dhawan,
+author = {Satish Dhawan},
+title = {Direct measurements of skin friction},
+school = {California Institute of Technology},
+year = {1951},
+month = {January},
+url = {http://resolver.caltech.edu/CaltechETD:etd-09262002-155504}
+}
+
+@misc{BulbE,
+author = {Thomas A. Edison},
+title = {Manufacture of carbon filaments},
+day = {8},
+month = {November},
+year = {1892},
+note = {{US} Patent US485616A}
+}
+
+@misc{ViBEpatent,
+author = {Marc Van Droogenbroeck and Olivier Barnich},
+title = {Visual background extractor},
+note = {{US} Patent US20100208998A1},
+day = {19},
+month = {August},
+year = {2010}
+}
+
+@Misc{nasa,
+author = {NASA},
+title = {Mariner 4, {NSSDC ID: 1964-077A}},
+year = {1964},
+note = {National Space Science Data Center, \url{http://nssdc.gsfc.nasa.gov/nmc/spacecraftDisplay.do?id=1964-077A}}
+}
+
+@Misc{Kodak,
+author = {Gabriel Fielding},
+title = {Digital {ICE}: {D}efect detection and correction using infrared-enabled scanners},
+year = {2007},
+note = {Eastman Kodak Company, \url{http://www.motion.kodak.com/motion/hub/itp/dice/default.htm}}
+}
+
+@InProceedings{Toyama, 
+	author={K. Toyama and J. Krumm and B. Brumitt and B. Meyers}, 
+	booktitle={Proceedings of International Conference on Computer Vision}, 
+	title={Wallflower: {P}rinciples and practice of background maintenance}, 
+	series = {ICCV~-~1999},
+	address = {Kerkyra, Greece},
+	year={1999}, 
+	month={September},
+	pages={255~-~261}
+}
+
+@InProceedings{icra,
+	author = {M. C. Lin and J. F. Canny},
+	booktitle = {International Conference on Robotics and Automation},
+	title = {A fast algorithm for incremental distance calculation },
+	series = {ICRA~-~1991},
+	address = {Los Alamitos, USA},
+	year = {1991},
+	month = {April},
+	pages = {1008~-~1014}
+}
+
+@book{Vapnik,
+author = "Vladimir N. Vapnik",
+title = "The nature of statistical learning theory",
+publisher = "Springer-Verlag, New York",
+year = "1995"
+}
+
+@book{p00e,
+author = "Anil K. Jain",
+title = "Fundamentals of digital image processing",
+publisher = "Prentice-Hall of India",
+year = "1989"
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% The End %%%%%%%%%%%%%%%%%%%%
