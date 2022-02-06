@@ -1,4 +1,5 @@
 from langdetect import detect
+import pandas as pd
 
 class FilterLanguage(object):
     
@@ -30,3 +31,23 @@ class FilterLanguage(object):
 
         with open(outfilename, mode='wt', encoding=enc) as myfile:
             myfile.write('\n'.join(comments))
+
+    # filters csv file texts based on column name (colname)
+    def filter_lang_csv(filename, outfilename, colname):
+
+        df = pd.read_csv(filename)
+        lines = df[colname]
+
+        comments = []
+
+        for i in range(0, len(lines)):
+            line2 = lines[i]
+            line = FilterLanguage.to_ascii(line2)
+            try:
+                if(len(line) > 0 and FilterLanguage.detect_language(line) == 'en'):
+                    comments.append(line)
+            except:
+                pass
+
+        df2 = pd.DataFrame({colname: comments})
+        df2.to_csv(outfilename, index=False)
