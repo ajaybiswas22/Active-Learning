@@ -21,6 +21,9 @@ class FilterLanguage(object):
         # make a list
         lines = no_str.split("\n")
 
+        # remove duplicates
+        lines = list(set(lines))
+
         comments = []
 
         for i in range(0, len(lines)):
@@ -40,6 +43,9 @@ class FilterLanguage(object):
 
         df = pd.read_csv(infile)
         lines = df[colname]
+
+        # remove duplicates
+        lines = list(set(lines))
 
         comments = []
 
