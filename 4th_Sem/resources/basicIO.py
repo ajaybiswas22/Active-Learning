@@ -1,3 +1,4 @@
+# Input and Output utility class
 class InputOutput(object):
 
     # loads text file into a list
@@ -9,7 +10,7 @@ class InputOutput(object):
         lines = no_str.split("\n")
         return lines
 
-    # loads numbers from a text file into  list
+    # loads numbers from a text file into list
     def load_nums(filename):
         text_file = open(filename, "r")
         no_str = text_file.read()

@@ -1,18 +1,21 @@
 from langdetect import detect
 import pandas as pd
 
+# Language detection and filteration class
 class FilterLanguage(object):
-    
+    # detects language
     def detect_language(line):
         return detect(line)
-
+    
+    # converts text to ascii (may remove incompatible letters)
     def to_ascii(string_with_nonASCII):
         encoded_string = string_with_nonASCII.encode("ascii", "ignore")
         decode_string = encoded_string.decode()
         return decode_string
-
-    def filter_lang_text(filename,outfilename,enc='utf-8'):
-        text_file = open(filename, "r", encoding=enc)
+    
+    # filters lines of a text file and stores in the outfile
+    def filter_lang_text(infile,outfile,enc='utf-8'):
+        text_file = open(infile, "r", encoding=enc)
         no_str = text_file.read()
         text_file.close()
         # make a list
@@ -29,13 +32,13 @@ class FilterLanguage(object):
             except:
                 pass
 
-        with open(outfilename, mode='wt', encoding=enc) as myfile:
+        with open(outfile, mode='wt', encoding=enc) as myfile:
             myfile.write('\n'.join(comments))
 
     # filters csv file texts based on column name (colname)
-    def filter_lang_csv(filename, outfilename, colname):
+    def filter_lang_csv(infile, outfile, colname):
 
-        df = pd.read_csv(filename)
+        df = pd.read_csv(infile)
         lines = df[colname]
 
         comments = []
@@ -50,4 +53,4 @@ class FilterLanguage(object):
                 pass
 
         df2 = pd.DataFrame({colname: comments})
-        df2.to_csv(outfilename, index=False)
+        df2.to_csv(outfile, index=False)
