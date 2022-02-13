@@ -1,3 +1,5 @@
+import pandas as pd
+
 # Input and Output utility class
 class InputOutput(object):
 
@@ -23,3 +25,9 @@ class InputOutput(object):
     def save_text(filename,listname, enc='utf-8'):
         with open(filename, mode='wt', encoding=enc) as myfile:
             myfile.write('\n'.join(listname))
+
+    # loads column of a csv file
+    def load_csv_col(infile, colname):
+        df = pd.read_csv(infile)
+        lines = df[colname]
+        return lines.tolist()
