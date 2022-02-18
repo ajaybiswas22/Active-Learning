@@ -44,22 +44,6 @@ class CommentTokenizer(object):
         pattern = re.compile(
             r'[\U0001F300-\U0001F5FF|\U0001F1E6-\U0001F1FF|\U00002700-\U000027BF|\U0001F900-\U0001F9FF|\U0001F600-\U0001F64F|\U0001F680-\U0001F6FF|\U00002600-\U000026FF]')
         return re.sub(pattern, '', text)
-
-    def format_token(token):
-        """"""
-        if token == '-LRB-':
-            token = '('
-        elif token == '-RRB-':
-            token = ')'
-        elif token == '-RSB-':
-            token = ']'
-        elif token == '-LSB-':
-            token = '['
-        elif token == '-LCB-':
-            token = '{'
-        elif token == '-RCB-':
-            token = '}'
-        return token
     
     def removeStopWords(text,lvl):
         # lvl 0 eng 1 heng 2 hindi
@@ -89,17 +73,19 @@ class CommentTokenizer(object):
         text = re.sub('(\@[^\s]+)', '', text)
         text = CommentTokenizer.remove_html_tags(text)
         text = CommentTokenizer.remove_punctuation(text)
+        text = CommentTokenizer.removeEmojis(text)
         
         if(stop_words_lvl!=None):
             text = CommentTokenizer.removeStopWords(text,stop_words_lvl)
 
-        text = ' '.join([CommentTokenizer.format_token(x) for x in tknzr.tokenize(text)])
+        text = str(re.sub(' +', ' ', text))
+        text = text.strip()
         return text
 
     # Loads a textfile, tokenizes it, and converts it into a list
-    def cleaned(filename):
+    def cleaned(filename,enc='utf-8'):
        # Load
-        text_file = open(filename, "r")
+        text_file = open(filename, "r",encoding=enc)
         no_str = text_file.read()
         text_file.close()
         # make a list
@@ -109,6 +95,8 @@ class CommentTokenizer(object):
         temp = []
         for comment in lines:
             tok_comment = CommentTokenizer.tokenize(comment)
+            if(len(tok_comment) == 0):
+                continue
             temp.append(tok_comment)
         lines = temp
 

@@ -1,15 +1,10 @@
+from audioop import reverse
 import re
 from string import punctuation
 from nltk import TweetTokenizer
 from nltk.tokenize.stanford import StanfordTokenizer
-import nltk
-from nltk.corpus import stopwords
-from nltk.corpus import wordnet
 
-nltk.download('stopwords')
-cachedStopWords = stopwords.words("english")
 CLEANR = re.compile('<.*?>')
-
 
 R_patterns = [
     (r'won\'t', 'will not'),
@@ -41,61 +36,56 @@ class CommentTokenizer(object):
                 text = text.replace(punc, ' ')
         return text.strip()
 
-
     def remove_html_tags(raw_html):
         cleantext = re.sub(CLEANR, '', raw_html)
         return cleantext
 
-    def format_token(token):
-        """"""
-        if token == '-LRB-':
-            token = '('
-        elif token == '-RRB-':
-            token = ')'
-        elif token == '-RSB-':
-            token = ']'
-        elif token == '-LSB-':
-            token = '['
-        elif token == '-LCB-':
-            token = '{'
-        elif token == '-RCB-':
-            token = '}'
-        return token
+    def removeEmojis(text):
+        pattern = re.compile(
+            r'[\U0001F300-\U0001F5FF|\U0001F1E6-\U0001F1FF|\U00002700-\U000027BF|\U0001F900-\U0001F9FF|\U0001F600-\U0001F64F|\U0001F680-\U0001F6FF|\U00002600-\U000026FF]')
+        return re.sub(pattern, '', text)
+    
+    def removeStopWords(text,lvl):
+        # lvl 0 eng 1 heng 2 hindi
+        if(lvl == None):
+            return text
+        
+        for item in lvl:
+            text_file = open('resources/stop_words/'+str(item)+'.txt', "r")
+            no_str = text_file.read()
+            text_file.close()
+            # make a list
+            lines = no_str.split("\n")
+            text = ' '.join([word for word in text.split()
+                                 if word not in lines])
+        return text
 
-    # Returns the tokenized sentence
-    def tokenize(sentence, to_lower=True, tknzr=TweetTokenizer()):
-        """Arguments:
-            - tknzr: a tokenizer implementing the NLTK tokenizer interface
-            - sentence: a string to be tokenized
-            - to_lower: lowercasing or not
-        """
+    def tokenize(text, stop_words_lvl=None, to_lower=True, tknzr=TweetTokenizer()):
+        
         rep_word = REReplacer()
-        sentence = rep_word.replace(sentence)
-        sentence = sentence.strip()
-        sentence = ' '.join([CommentTokenizer.format_token(x) for x in tknzr.tokenize(sentence)])
-        if to_lower:
-            sentence = sentence.lower()
-        # replace urls by <url>
-        sentence = re.sub(
-            '((www\.[^\s]+)|(https?://[^\s]+)|(http?://[^\s]+))', '', sentence)
-        # replace @user268 by <user>
-        sentence = re.sub('(\@[^\s]+)', '', sentence)
+        text = rep_word.replace(text)
+        text = text.strip()
 
-        filter(lambda word: ' ' not in word, sentence)
+        if(to_lower == True):
+            text = text.lower()
 
-        #remove single letter words
-        sentence = ' '.join([w for w in sentence.split() if len(w) > 1])
+        text = re.sub('((www\.[^\s]+)|(https?://[^\s]+)|(http?://[^\s]+))', '', text)
+        text = re.sub('(\@[^\s]+)', '', text)
+        text = CommentTokenizer.remove_html_tags(text)
+        text = CommentTokenizer.remove_punctuation(text)
+        text = CommentTokenizer.removeEmojis(text)
+        
+        if(stop_words_lvl!=None):
+            text = CommentTokenizer.removeStopWords(text,stop_words_lvl)
 
-        sentence = CommentTokenizer.remove_html_tags(sentence)
-        sentence = CommentTokenizer.remove_punctuation(sentence)
-        sentence = ' '.join([word for word in sentence.split()
-                            if word not in cachedStopWords])
-        return sentence
+        text = str(re.sub(' +', ' ', text))
+        text = text.strip()
+        return text
 
     # Loads a textfile, tokenizes it, and converts it into a list
-    def cleaned(filename):
+    def cleaned(filename,enc='utf-8',lvl=None):
        # Load
-        text_file = open(filename, "r")
+        text_file = open(filename, "r",encoding=enc)
         no_str = text_file.read()
         text_file.close()
         # make a list
@@ -104,9 +94,33 @@ class CommentTokenizer(object):
         #cleanup
         temp = []
         for comment in lines:
-            tok_comment = CommentTokenizer.tokenize(comment)
+            tok_comment = CommentTokenizer.tokenize(comment,lvl)
+            if(len(tok_comment) == 0):
+                continue
             temp.append(tok_comment)
         lines = temp
 
         return lines
+
+    def get_word_frequency(filename):
+        huge_list = []
+
+        with open(filename, "r", encoding='utf-8') as f:
+            for line in f:
+                line = CommentTokenizer.tokenize(line)
+                huge_list.extend(line.split())
+
+        frequency = {}
+        # iterating over the list
+        for item in huge_list:
+            # checking the element in dictionary
+            if item in frequency:
+                # incrementing the count
+                frequency[item] += 1
+            else:
+                # initializing the count
+                frequency[item] = 1
+
+        frequency = {k: v for k, v in sorted(frequency.items(), key=lambda item: item[1], reverse=True)}
+        return frequency
 
