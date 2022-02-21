@@ -64,7 +64,7 @@ class FilterLanguage(object):
         df2.to_csv(outfile, index=False)
 
     def hasCloseMatches(patterns, word):
-        if( len(get_close_matches(word, patterns))>0):
+        if(get_close_matches(word, patterns) != None):
             return True
         else:
             return False
