@@ -56,12 +56,14 @@ class CommentTokenizer(object):
             text_file.close()
             # make a list
             lines = no_str.split("\n")
+            
             text = ' '.join([word for word in text.split()
                                  if word not in lines])
         return text
 
-    def tokenize(text, stop_words_lvl=None, to_lower=True, tknzr=TweetTokenizer()):
+    def tokenize(texts, stop_words_lvl=None, to_lower=True, tknzr=TweetTokenizer()):
         
+        text = texts
         rep_word = REReplacer()
         text = rep_word.replace(text)
         text = text.strip()
