@@ -68,7 +68,6 @@ by
 for
 with
 about
-against
 between
 into
 through
@@ -84,8 +83,6 @@ down
 in
 out
 on
-off
-over
 under
 again
 further
@@ -107,8 +104,6 @@ most
 other
 some
 such
-no
-nor
 only
 own
 same
