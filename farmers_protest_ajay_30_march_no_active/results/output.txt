@@ -1,0 +1,261 @@
+========= Gaussian NB Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.565
+ 
+Confusion matrix:
+ [[57 22]
+ [65 56]]
+ 
+========= Gaussian NB Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.605
+ 
+Confusion matrix:
+ [[64 15]
+ [64 57]]
+ 
+========= Gaussian NB Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.585
+ 
+Confusion matrix:
+ [[18 61]
+ [22 99]]
+ 
+========= Gaussian NB Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.595
+ 
+Confusion matrix:
+ [[  5  74]
+ [  7 114]]
+ 
+========= LR Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.655
+ 
+Confusion matrix:
+ [[ 25  54]
+ [ 15 106]]
+ 
+========= LR Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.74
+ 
+Confusion matrix:
+ [[ 45  34]
+ [ 18 103]]
+ 
+========= LR Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.595
+ 
+Confusion matrix:
+ [[  0  79]
+ [  2 119]]
+ 
+========= LR Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.635
+ 
+Confusion matrix:
+ [[ 14  65]
+ [  8 113]]
+ 
+========= SVM Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.605
+ 
+Confusion matrix:
+ [[  0  79]
+ [  0 121]]
+ 
+========= SVM Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.715
+ 
+Confusion matrix:
+ [[47 32]
+ [25 96]]
+ 
+========= SVM Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.605
+ 
+Confusion matrix:
+ [[  0  79]
+ [  0 121]]
+ 
+========= SVM Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.585
+ 
+Confusion matrix:
+ [[  1  78]
+ [  5 116]]
+ 
+========= SVM Batch Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.585
+ 
+Confusion matrix:
+ [[42 37]
+ [46 75]]
+ 
+========= SGD Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.5
+ 
+Confusion matrix:
+ [[74  5]
+ [95 26]]
+ 
+========= SGD Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.655
+ 
+Confusion matrix:
+ [[49 30]
+ [39 82]]
+ 
+========= SGD Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.48
+ 
+Confusion matrix:
+ [[ 76   3]
+ [101  20]]
+ 
+========= SGD Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.66
+ 
+Confusion matrix:
+ [[40 39]
+ [29 92]]
+ 
+========= LDA Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.64
+ 
+Confusion matrix:
+ [[38 41]
+ [31 90]]
+ 
+========= LDA Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.685
+ 
+Confusion matrix:
+ [[47 32]
+ [31 90]]
+ 
+========= LDA Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.59
+ 
+Confusion matrix:
+ [[53 26]
+ [56 65]]
+ 
+========= LDA Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.625
+ 
+Confusion matrix:
+ [[40 39]
+ [36 85]]
+ 
+========= Decision Trees Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.615
+ 
+Confusion matrix:
+ [[41 38]
+ [39 82]]
+ 
+========= Decision Trees Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.62
+ 
+Confusion matrix:
+ [[36 43]
+ [33 88]]
+ 
+========= Decision Trees Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.595
+ 
+Confusion matrix:
+ [[33 46]
+ [35 86]]
+ 
+========= Decision Trees Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.605
+ 
+Confusion matrix:
+ [[25 54]
+ [25 96]]
+ 
+========= Random Forest Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.67
+ 
+Confusion matrix:
+ [[41 38]
+ [28 93]]
+ 
+========= Random Forest Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.67
+ 
+Confusion matrix:
+ [[38 41]
+ [25 96]]
+ 
+========= Random Forest Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.565
+ 
+Confusion matrix:
+ [[ 12  67]
+ [ 20 101]]
+ 
+========= Random Forest Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.62
+ 
+Confusion matrix:
+ [[ 18  61]
+ [ 15 106]]
+ 

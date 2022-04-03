@@ -1,0 +1,261 @@
+========= Gaussian NB Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.608
+ 
+Confusion matrix:
+ [[ 91 106]
+ [ 90 213]]
+ 
+========= Gaussian NB Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.594
+ 
+Confusion matrix:
+ [[126  71]
+ [132 171]]
+ 
+========= Gaussian NB Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.452
+ 
+Confusion matrix:
+ [[ 62 135]
+ [139 164]]
+ 
+========= Gaussian NB Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.578
+ 
+Confusion matrix:
+ [[ 37 160]
+ [ 51 252]]
+ 
+========= LR Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.578
+ 
+Confusion matrix:
+ [[130  67]
+ [144 159]]
+ 
+========= LR Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.61
+ 
+Confusion matrix:
+ [[160  37]
+ [158 145]]
+ 
+========= LR Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.586
+ 
+Confusion matrix:
+ [[ 11 186]
+ [ 21 282]]
+ 
+========= LR Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.61
+ 
+Confusion matrix:
+ [[ 49 148]
+ [ 47 256]]
+ 
+========= SVM Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.436
+ 
+Confusion matrix:
+ [[193   4]
+ [278  25]]
+ 
+========= SVM Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.538
+ 
+Confusion matrix:
+ [[179  18]
+ [213  90]]
+ 
+========= SVM Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.606
+ 
+Confusion matrix:
+ [[  0 197]
+ [  0 303]]
+ 
+========= SVM Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.59
+ 
+Confusion matrix:
+ [[ 16 181]
+ [ 24 279]]
+ 
+========= SVM Batch Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.6
+ 
+Confusion matrix:
+ [[100  97]
+ [103 200]]
+ 
+========= SGD Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.628
+ 
+Confusion matrix:
+ [[ 32 165]
+ [ 21 282]]
+ 
+========= SGD Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.642
+ 
+Confusion matrix:
+ [[149  48]
+ [131 172]]
+ 
+========= SGD Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.604
+ 
+Confusion matrix:
+ [[  0 197]
+ [  1 302]]
+ 
+========= SGD Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.594
+ 
+Confusion matrix:
+ [[103  94]
+ [109 194]]
+ 
+========= LDA Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.608
+ 
+Confusion matrix:
+ [[  7 190]
+ [  6 297]]
+ 
+========= LDA Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.628
+ 
+Confusion matrix:
+ [[148  49]
+ [137 166]]
+ 
+========= LDA Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.566
+ 
+Confusion matrix:
+ [[121  76]
+ [141 162]]
+ 
+========= LDA Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.592
+ 
+Confusion matrix:
+ [[ 90 107]
+ [ 97 206]]
+ 
+========= Decision Trees Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.454
+ 
+Confusion matrix:
+ [[173  24]
+ [249  54]]
+ 
+========= Decision Trees Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.578
+ 
+Confusion matrix:
+ [[ 55 142]
+ [ 69 234]]
+ 
+========= Decision Trees Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.488
+ 
+Confusion matrix:
+ [[ 72 125]
+ [131 172]]
+ 
+========= Decision Trees Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.578
+ 
+Confusion matrix:
+ [[ 72 125]
+ [ 86 217]]
+ 
+========= Random Forest Seed Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.568
+ 
+Confusion matrix:
+ [[ 96 101]
+ [115 188]]
+ 
+========= Random Forest Seed Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.638
+ 
+Confusion matrix:
+ [[ 81 116]
+ [ 65 238]]
+ 
+========= Random Forest Expanded Set N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.492
+ 
+Confusion matrix:
+ [[ 87 110]
+ [144 159]]
+ 
+========= Random Forest Expanded Set N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.592
+ 
+Confusion matrix:
+ [[ 68 129]
+ [ 75 228]]
+ 
