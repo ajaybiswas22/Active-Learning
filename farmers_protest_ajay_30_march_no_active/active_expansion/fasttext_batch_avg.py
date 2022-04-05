@@ -10,6 +10,8 @@ class Expander(object):
 
     def oracleHelp(classdata):
         sums = sum(classdata)
+        if(sums == 0):
+            return False
         res = any(((ele/sums) >= 0.48 and (ele/sums) <= 0.52) for ele in classdata)
         return res
 

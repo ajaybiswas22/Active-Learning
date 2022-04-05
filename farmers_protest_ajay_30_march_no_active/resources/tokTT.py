@@ -2,10 +2,14 @@ from audioop import reverse
 import re
 from string import punctuation
 from nltk import TweetTokenizer
+import twokenize
 from nltk.tokenize.stanford import StanfordTokenizer
+import preprocessor as p
 import nltk
+import string
 nltk.download('wordnet')
 lemmatizer = nltk.stem.wordnet.WordNetLemmatizer()
+from resources.basicIO import InputOutput as IO
 
 posMapping = {
     # "First_Letter by nltk.pos_tag":"POS_for_lemmatizer"
@@ -28,6 +32,33 @@ R_patterns = [
     (r'(\w+)\'s', '\g<1> is'),
     (r'(\w+)\'re', '\g<1> are'),
 ]
+
+emoji_pattern = re.compile("["
+                           u"\U0001F600-\U0001F64F"  # emoticons
+                           u"\U0001F300-\U0001F5FF"  # symbols & pictographs
+                           u"\U0001F680-\U0001F6FF"  # transport & map symbols
+                           u"\U0001F1E0-\U0001F1FF"  # flags (iOS)
+                           u"\U00002702-\U000027B0"
+                           u"\U000024C2-\U0001F251"
+                           "]+", flags=re.UNICODE)
+
+#HappyEmoticons
+emoticons_happy = set([
+    ':-)', ':)', ';)', ':o)', ':]', ':3', ':c)', ':>', '=]', '8)', '=)', ':}',
+    ':^)', ':-D', ':D', '8-D', '8D', 'x-D', 'xD', 'X-D', 'XD', '=-D', '=D',
+    '=-3', '=3', ':-))', ":'-)", ":')", ':*', ':^*', '>:P', ':-P', ':P', 'X-P',
+    'x-p', 'xp', 'XP', ':-p', ':p', '=p', ':-b', ':b', '>:)', '>;)', '>:-)',
+    '<3'
+    ])
+
+# Sad Emoticons
+emoticons_sad = set([
+    ':L', ':-/', '>:/', ':S', '>:[', ':@', ':-(', ':[', ':-||', '=L', ':<',
+    ':-[', ':-<', '=\\', '=/', '>:(', ':(', '>.<', ":'-(", ":'(", ':\\', ':-c',
+    ':c', ':{', '>:\\', ';('
+])
+
+emoticons = emoticons_happy.union(emoticons_sad)
 
 class REReplacer(object):
    def __init__(self, pattern=R_patterns):
@@ -110,7 +141,7 @@ class CommentTokenizer(object):
         return ' '.join(output)
 
     # Loads a textfile, tokenizes it, and converts it into a list
-    def cleaned(filename,enc='utf-8',lvl=None):
+    def cleaned(filename, lvl=None, enc='utf-8'):
        # Load
         text_file = open(filename, "r",encoding=enc)
         no_str = text_file.read()
