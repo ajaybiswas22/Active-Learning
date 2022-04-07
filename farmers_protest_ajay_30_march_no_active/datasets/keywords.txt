@@ -30,6 +30,7 @@ mazdoor
 media
 modi
 modiji
+msp
 pakistan
 pnjab
 price
@@ -39,6 +40,7 @@ rally
 ravish
 reject
 repeal
+rss
 rubbish
 sapot
 sarkaar
