@@ -96,6 +96,7 @@ class Expander(object):
                expansion_text_labels,
                expansion_TK,
                batch_size,
+               count,
                k,
                out_text_file,
                out_label_file
@@ -105,7 +106,7 @@ class Expander(object):
         model = fasttext.load_model(model_file)
 
         # select comments from expansion_set in batches
-        M = np.arange(0, 800, batch_size)
+        M = np.arange(0, count, batch_size)
 
         seed_TK = copy.deepcopy(seed_set_TK)
         seed_labels = copy.deepcopy(seed_set_labels)
