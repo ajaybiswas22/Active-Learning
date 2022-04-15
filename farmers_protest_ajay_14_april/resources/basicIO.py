@@ -4,6 +4,8 @@ import pandas as pd
 class InputOutput(object):
 
     # loads text file into a list
+    ''' Input output utility class
+    '''
     def load_text(filename, enc='utf-8'):
         text_file = open(filename, "r", encoding=enc)
         no_str = text_file.read()
