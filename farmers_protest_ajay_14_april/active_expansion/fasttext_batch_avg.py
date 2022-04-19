@@ -2,6 +2,7 @@ import numpy as np
 import fasttext
 from resources.basicIO import InputOutput as IO
 import copy
+import random
 
 class Expander(object):
 
@@ -19,6 +20,10 @@ class Expander(object):
         dot_product = np.dot(a, b)
         norm_a = np.linalg.norm(a)
         norm_b = np.linalg.norm(b)
+
+        if(norm_a * norm_b == 0.0):
+            return dot_product / (norm_a * norm_b + 0.001)
+            
         return dot_product / (norm_a * norm_b)
 
     def sim(x, y, sim_type='cosine_sim'):
@@ -69,7 +74,7 @@ class Expander(object):
             avgs = np.zeros(no_labels)
 
             for lbl in range(no_labels):
-                indices = [ix for ix, label in enumerate(labels) if label == lbl]
+                indices = [ix for ix, label in enumerate(labels) if int(label) == int(lbl)]
                 avgs[lbl] = np.mean([column[x] for x in indices])
 
             if(exp_labels != None and Expander.oracleHelp(avgs)):
@@ -133,6 +138,48 @@ class Expander(object):
         IO.save_text(out_text_file, seed_text)
         IO.save_text(out_label_file, map(str, seed_labels))
 
+    def Expand_R(model,
+                 seed_set_TK,
+                 seed_set_labels,
+                 expansion_TK,
+                 expansion_text_labels,
+                 batch_size,
+                 count,
+                 k,
+                 random_rate
+                 ):
+
+        # select comments from expansion_set in batches
+        M = np.arange(0, count, batch_size)
+
+        seed_TK = copy.deepcopy(seed_set_TK)
+        seed_labels = copy.deepcopy(seed_set_labels)
+
+        cnt = int(random_rate * batch_size)
+
+        count2 = [0]
+        
+        for i in range(1, len(M)):
+
+            exp_TK = expansion_TK[M[i-1]:M[i]]
+            exp_labels = expansion_text_labels[M[i-1]:M[i]]
+
+            # find NN
+            seed_NN = Expander.get_NN(model, seed_TK, k)
+            exp_NN = Expander.get_NN(model, exp_TK, k)
+
+            A = np.array(seed_NN)
+            B = np.array(exp_NN).T
+            C = Expander.sim_matrix(A, B, 'cosine_sim')
+
+            #Y = Expander.label_avg(C, seed_labels, count2, exp_labels)
+            # do not check labels
+            Y = Expander.label_avg(C, seed_labels, count2)
+
+            seed_labels.extend(Y)
+            seed_TK.extend(exp_TK)
+
+        return seed_TK, seed_labels, count2
 
     
 
