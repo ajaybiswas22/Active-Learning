@@ -4,8 +4,8 @@ Model Accuracy:
  0.7681818181818182
  
 Confusion matrix:
- [[210  42]
- [ 60 128]]
+ [[209  43]
+ [ 59 129]]
  
 ========= SVM Normal N=2 Model Test Results ===========
  
