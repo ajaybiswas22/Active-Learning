@@ -1,18 +1,18 @@
 ========= LR Normal N=2 Model Test Results ===========
  
 Model Accuracy:
- 0.6519114688128773
+ 0.6539235412474849
  
 Confusion matrix:
- [[249  33]
- [140  75]]
+ [[248  34]
+ [138  77]]
  
 ========= SVM Normal N=2 Model Test Results ===========
  
 Model Accuracy:
- 0.6338028169014085
+ 0.6438631790744467
  
 Confusion matrix:
- [[274   8]
- [174  41]]
+ [[256  26]
+ [151  64]]
  
