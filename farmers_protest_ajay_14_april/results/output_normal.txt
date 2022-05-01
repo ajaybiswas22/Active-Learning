@@ -1,54 +1,54 @@
 ========= LR Normal N=2 Model Test Results ===========
  
 Model Accuracy:
- 0.7603686635944701
+ 0.7331288343558282
  
 Confusion matrix:
- [[295  74]
- [ 82 200]]
+ [[145  40]
+ [ 47  94]]
  
 ========= SVM Normal N=2 Model Test Results ===========
  
 Model Accuracy:
- 0.7619047619047619
+ 0.7852760736196319
  
 Confusion matrix:
- [[290  79]
- [ 76 206]]
+ [[151  34]
+ [ 36 105]]
  
 ========= KNN Normal N=2 Model Test Results ===========
  
 Model Accuracy:
- 0.6758832565284179
+ 0.7208588957055214
  
 Confusion matrix:
- [[311  58]
- [153 129]]
+ [[133  52]
+ [ 39 102]]
  
 ========= LR Normal N=3 Model Test Results ===========
  
 Model Accuracy:
- 0.7588325652841782
+ 0.7331288343558282
  
 Confusion matrix:
- [[295  74]
- [ 83 199]]
+ [[143  42]
+ [ 45  96]]
  
 ========= SVM Normal N=3 Model Test Results ===========
  
 Model Accuracy:
- 0.7603686635944701
+ 0.7668711656441718
  
 Confusion matrix:
- [[289  80]
- [ 76 206]]
+ [[145  40]
+ [ 36 105]]
  
 ========= KNN Normal N=3 Model Test Results ===========
  
 Model Accuracy:
- 0.6774193548387096
+ 0.7177914110429447
  
 Confusion matrix:
- [[312  57]
- [153 129]]
+ [[130  55]
+ [ 37 104]]
  
