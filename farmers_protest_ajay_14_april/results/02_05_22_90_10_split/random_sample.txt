@@ -1,6 +1,0 @@
-models/ft_unsupervised_N_2.bin , 20 , 0.2 , 2909 , LR , 0.6656441717791411
-models/ft_unsupervised_N_2.bin , 20 , 0.2 , 2909 , SVM , 0.6595092024539877
-models/ft_unsupervised_N_2.bin , 20 , 0.2 , 2909 , KNN , 0.6104294478527608
-models/ft_unsupervised_N_3.bin , 20 , 0.2 , 2909 , LR , 0.656441717791411
-models/ft_unsupervised_N_3.bin , 20 , 0.2 , 2909 , SVM , 0.696319018404908
-models/ft_unsupervised_N_3.bin , 20 , 0.2 , 2909 , KNN , 0.6104294478527608

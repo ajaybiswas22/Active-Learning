@@ -18,3 +18,11 @@ X_seed: 26
 X_expand: 2577
 
 X_uncertain_exp_u: 666 (20,5)
+
+
+classifiers = {
+    "SVM": make_pipeline(StandardScaler(), svm.SVC(probability=True, kernel='rbf')),
+    "KNN": KNeighborsClassifier(n_neighbors=20),
+    "LR": make_pipeline(StandardScaler(), LogisticRegression(solver='lbfgs', penalty='l2', C=0.05, max_iter=10000, random_state=2)),
+    "MLP": make_pipeline(StandardScaler(), MLPClassifier(max_iter=1000, activation='logistic'))
+}
