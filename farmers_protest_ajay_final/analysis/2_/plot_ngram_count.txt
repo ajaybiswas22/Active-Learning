@@ -1,0 +1,212 @@
+good
+Negative:  84
+Positive:  122
+
+win
+Negative:  81
+Positive:  37
+
+contract
+Negative:  38
+Positive:  34
+
+election
+Negative:  97
+Positive:  28
+
+land
+Negative:  34
+Positive:  37
+
+kisan
+Negative:  55
+Positive:  27
+
+middleman
+Negative:  5
+Positive:  75
+
+money
+Negative:  20
+Positive:  43
+
+corporates
+Negative:  53
+Positive:  17
+
+demand
+Negative:  18
+Positive:  27
+
+consumer
+Negative:  24
+Positive:  18
+
+family
+Negative:  23
+Positive:  19
+
+sikh
+Negative:  36
+Positive:  13
+
+modiji
+Negative:  11
+Positive:  15
+
+suicide
+Negative:  4
+Positive:  24
+
+victory
+Negative:  40
+Positive:  5
+
+khalistani
+Negative:  15
+Positive:  37
+
+road
+Negative:  20
+Positive:  12
+
+pakistan
+Negative:  14
+Positive:  10
+
+monopoly
+Negative:  8
+Positive:  17
+
+care
+Negative:  13
+Positive:  8
+
+corporation
+Negative:  11
+Positive:  6
+
+supporter
+Negative:  15
+Positive:  10
+
+flag
+Negative:  4
+Positive:  14
+
+khalistan
+Negative:  18
+Positive:  51
+
+ambani
+Negative:  25
+Positive:  2
+
+adani
+Negative:  24
+Positive:  2
+
+modi ji
+Negative:  19
+Positive:  26
+
+i support
+Negative:  41
+Positive:  22
+
+we support
+Negative:  20
+Positive:  2
+
+jai kisan
+Negative:  22
+Positive:  2
+
+private player
+Negative:  10
+Positive:  9
+
+rich farmer
+Negative:  1
+Positive:  29
+
+free market
+Negative:  2
+Positive:  16
+
+contract farm
+Negative:  19
+Positive:  16
+
+private company
+Negative:  12
+Positive:  9
+
+salute to
+Negative:  31
+Positive:  0
+
+so call
+Negative:  8
+Positive:  28
+
+so called
+Negative:  5
+Positive:  18
+
+big company
+Negative:  9
+Positive:  5
+
+farmer want
+Negative:  3
+Positive:  9
+
+700 farmer
+Negative:  12
+Positive:  1
+
+only 6
+Negative:  2
+Positive:  9
+
+supreme court
+Negative:  3
+Positive:  7
+
+these farmer
+Negative:  21
+Positive:  20
+
+stand with
+Negative:  46
+Positive:  3
+
+other state
+Negative:  11
+Positive:  36
+
+punjab and haryana
+Negative:  11
+Positive:  39
+
+for the farmer
+Negative:  14
+Positive:  16
+
+do not want
+Negative:  11
+Positive:  19
+
+farmer from punjab
+Negative:  2
+Positive:  16
+
+good for farmer
+Negative:  3
+Positive:  12
+
+wheat and rice
+Negative:  6
+Positive:  6
+

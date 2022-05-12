@@ -1,0 +1,134 @@
+========= LR Normal N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.7511520737327189
+ 
+Confusion matrix:
+ [[293  77]
+ [ 85 196]]
+ 
+========= SVM Normal N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.7895545314900153
+ 
+Confusion matrix:
+ [[312  58]
+ [ 79 202]]
+ 
+========= KNN Normal N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.7112135176651305
+ 
+Confusion matrix:
+ [[251 119]
+ [ 69 212]]
+ 
+========= MLP Normal N=2 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.7695852534562212
+ 
+Confusion matrix:
+ [[296  74]
+ [ 76 205]]
+ 
+========= LR Normal N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.7588325652841782
+ 
+Confusion matrix:
+ [[297  73]
+ [ 84 197]]
+ 
+========= SVM Normal N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.7880184331797235
+ 
+Confusion matrix:
+ [[306  64]
+ [ 74 207]]
+ 
+========= KNN Normal N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.7112135176651305
+ 
+Confusion matrix:
+ [[248 122]
+ [ 66 215]]
+ 
+========= MLP Normal N=3 Model Test Results ===========
+ 
+Model Accuracy:
+ 0.7711213517665131
+ 
+Confusion matrix:
+ [[296  74]
+ [ 75 206]]
+ 
+
+---------------------------
+Random Sampling
+
+N = 2
+
+[[[283  87]
+  [102 179]]
+
+ [[293  77]
+  [114 167]]
+
+ [[236 134]
+  [ 80 201]]
+
+ [[276  94]
+  [102 179]]
+
+N = 3
+
+ [[277  93]
+  [109 172]]
+
+ [[288  82]
+  [111 170]]
+
+ [[239 131]
+  [ 86 195]]
+
+ [[266 104]
+  [111 170]]]
+
+------------------------
+Uncertainty Sampling
+
+N = 2 
+
+[[[301  69]
+  [ 65 216]]
+
+ [[326  44]
+  [ 69 212]]
+
+ [[239 131]
+  [ 65 216]]
+
+ [[313  57]
+  [ 59 222]]
+
+N = 3
+
+ [[298  72]
+  [ 74 207]]
+
+ [[314  56]
+  [ 58 223]]
+
+ [[249 121]
+  [ 76 205]]
+
+ [[312  58]
+  [ 61 220]]]
