@@ -1,0 +1,36 @@
+========= SVM Model Test Results ===========
+ 
+Model Accuracy:
+ 0.7468354430379747
+ 
+Confusion matrix:
+ [[215  53]
+ [ 67 139]]
+ 
+========= KNN Model Test Results ===========
+ 
+Model Accuracy:
+ 0.6962025316455697
+ 
+Confusion matrix:
+ [[219  49]
+ [ 95 111]]
+ 
+========= LR Model Test Results ===========
+ 
+Model Accuracy:
+ 0.7552742616033755
+ 
+Confusion matrix:
+ [[211  57]
+ [ 59 147]]
+ 
+========= MLP Model Test Results ===========
+ 
+Model Accuracy:
+ 0.7531645569620253
+ 
+Confusion matrix:
+ [[213  55]
+ [ 62 144]]
+ 
