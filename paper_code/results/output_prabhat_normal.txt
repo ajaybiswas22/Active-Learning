@@ -28,9 +28,9 @@ Confusion matrix:
 ========= MLP Model Test Results ===========
  
 Model Accuracy:
- 0.7658227848101266
+ 0.7827004219409283
  
 Confusion matrix:
- [[209  59]
- [ 52 154]]
+ [[216  52]
+ [ 51 155]]
  
